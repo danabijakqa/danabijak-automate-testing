@@ -1,2 +1,12 @@
-# danabijak-automation-testing
-Repository automation testing danabijak web apps
+# danabijak-frontend-automate-test
+
+## Requirements
+- Python
+- Selenium
+- Webdriver
+
+# How to run
+
+```bash
+$ behave --no-capture --format plain
+```
