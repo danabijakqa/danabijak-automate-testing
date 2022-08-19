@@ -55,4 +55,68 @@ def click_tentangkami_button(context):
     tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[2]/ul/li[1]/a')
     at = ActionChains(context.driver)
     at.click(on_element=tk).perform();
+    time.sleep(7) 
+
+@then('user can click timkami page')
+def click_timkami_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[2]/ul/li[2]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)
+
+@then('user can click pemberipinjaman page')
+def click_pempinjaman_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[2]/ul/li[3]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
     time.sleep(7)    
+
+@then('user can click faq page')
+def click_faq_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[3]/ul/li[1]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)     
+
+@then('user can click carakerja page')
+def click_carakerja_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[3]/ul/li[2]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)    
+
+@then('user can click informasibiaya page')
+def click_infobiaya_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[3]/ul/li[3]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)    
+
+@then('user can click syaratketentuan page')
+def click_syaratketentuan_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[4]/ul/li[1]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)       
+
+@then('user can click kebijakanprivasi page')
+def click_kebijakan_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[4]/ul/li[2]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)  
+
