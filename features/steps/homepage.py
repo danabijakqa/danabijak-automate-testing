@@ -18,7 +18,7 @@ def open_browser(context):
 
 @when('open danabijak site')
 def homepage_show_up(context):
-    context.driver.get('https://sandbox.danabijak.com')
+    context.driver.get('https://danabijak.com')
 
 @then('close browser')
 def close_browser(context):
@@ -36,6 +36,7 @@ def click_login_button(context):
 
 @then('user can click register button')
 def click_register_button(context):
+    time.sleep(3)
     context.driver.find_element(By.XPATH, '//*[@id="nav-collapse"]/ul/li[3]/button').click()
 
 @then('user can click tentangkami page')
@@ -45,7 +46,7 @@ def click_tentangkami_button(context):
     tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[2]/h5/a')
     at = ActionChains(context.driver)
     at.click(on_element=tk).perform();
-    time.sleep(10)
+    time.sleep(7)
 
 @then('user can click agendakegiatan page')
 def click_tentangkami_button(context):
@@ -54,4 +55,4 @@ def click_tentangkami_button(context):
     tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[2]/ul/li[1]/a')
     at = ActionChains(context.driver)
     at.click(on_element=tk).perform();
-    time.sleep(10)    
+    time.sleep(7)    
