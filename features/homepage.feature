@@ -1,4 +1,4 @@
-Feature: Homepage presence
+Feature: Homepage presence  
 
     Scenario: User can see TKB90
         Given open browser
@@ -62,3 +62,63 @@ Feature: Homepage presence
         Given open browser
         When open danabijak site
         Then user can click kebijakanprivasi page                    
+
+    Scenario: User can click kebijakanprivasi page
+        Given open browser
+        When open danabijak site
+        Then user can click kebijakanprivasi page    
+
+    Scenario: User can click cekbiaya button
+        Given open browser
+        When open danabijak site
+        Then user can click cekbiaya button  
+    
+    Scenario: User can click playstore page
+        Given open browser
+        When open danabijak site
+        Then user can click playstore page           
+
+    Scenario: User can click whatsapp number button
+        Given open browser
+        When open danabijak site
+        Then user can click whatsapp number button   
+
+    Scenario: User can click email button
+        Given open browser
+        When open danabijak site
+        Then user can click email button   
+ 
+    Scenario: User can click facebook button logo
+        Given open browser
+        When open danabijak site
+        Then user can click facebook button logo  
+
+    Scenario: User can click linkedin button logo
+        Given open browser
+        When open danabijak site
+        Then user can click linkedin button logo  
+
+    Scenario: User can click twitter button logo
+        Given open browser
+        When open danabijak site
+        Then user can click twitter button logo
+
+    Scenario: User can click instagram button logo
+        Given open browser
+        When open danabijak site
+        Then user can click instagram button logo  
+
+    Scenario: User can click keterangan persyaratan minimum button
+        Given open browser
+        When open danabijak site
+        Then user can click keterangan persyaratan minimum button
+
+    Scenario: User can click ajukanpinjaman page
+        Given open browser
+        When open danabijak site
+        Then user can click ajukanpinjaman page
+
+    Scenario: User can click livechat casengo button
+        Given open browser
+        When open danabijak site
+        Then user can click livechat casengo button                            

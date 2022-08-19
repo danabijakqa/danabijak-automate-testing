@@ -120,3 +120,91 @@ def click_kebijakan_button(context):
     at.click(on_element=tk).perform();
     time.sleep(7)  
 
+@then('user can click cekbiaya button')
+def click_cekbiaya_button(context):
+    context.driver.find_element(By.XPATH, '//*[@id="main-calculator"]/div[1]/div/button').click()
+   
+@then('user can click keterangan persyaratan minimum button')
+def click_keterangan_persyaratan_button(context):
+    context.driver.find_element(By.CSS_SELECTOR, "#main-calculator > div.wrapperBtnCalculate > button").click()
+
+@then('user can click ajukanpinjaman page')
+def click_ajukanpinjaman_button(context):
+    context.driver.execute_script("window.scrollTo(0, 2000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[2]/div/section[1]/div/div/div[2]/button')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(10)      
+
+@then('user can click playstore page') 
+def click_playstore_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[1]/div[1]/a/img')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)     
+
+@then('user can click whatsapp number button')
+def click_wanumber_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[2]/div[2]/ul/li[3]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)   
+
+@then('user can click email button')
+def click_email_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[2]/div[2]/ul/li[5]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(7)  
+
+@then('user can click facebook button logo')
+def click_facebook_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[2]/div[3]/ul/li[1]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(5)             
+
+@then('user can click linkedin button logo')
+def click_linkedin_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[2]/div[3]/ul/li[2]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(5)  
+
+@then('user can click twitter button logo')
+def click_twitter_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[2]/div[3]/ul/li[2]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(5)  
+
+@then('user can click instagram button logo')
+def click_instagram_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[2]/div[3]/ul/li[4]/a')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(5)    
+
+@then('user can click livechat casengo button')
+def click_livechat_button(context):
+    context.driver.execute_script("window.scrollTo(0, 3000)")
+    time.sleep(3)
+    tk = context.driver.find_element(By.XPATH, '//*[@id="casengo-inline-chat-status-button-text"]')
+    at = ActionChains(context.driver)
+    at.click(on_element=tk).perform();
+    time.sleep(5)              
