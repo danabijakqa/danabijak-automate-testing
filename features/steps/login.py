@@ -7,7 +7,7 @@ import time
 
 @when('open danabijak login site')
 def homepage_show_up(context):
-    context.driver.get('https://sandbox.danabijak.com/login')
+    context.driver.get('https://danabijak:sandboxdanabijak!123@sandbox.danabijak.com/login')
 
 @then('user input email')
 def user_input_email(context):

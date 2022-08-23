@@ -106,19 +106,14 @@ Feature: Homepage presence
     Scenario: User can click instagram button logo
         Given open browser
         When open danabijak site
-        Then user can click instagram button logo  
-
-    Scenario: User can click keterangan persyaratan minimum button
-        Given open browser
-        When open danabijak site
-        Then user can click keterangan persyaratan minimum button
-
+        Then user can click instagram button logo
+        
     Scenario: User can click ajukanpinjaman page
         Given open browser
         When open danabijak site
         Then user can click ajukanpinjaman page
 
-    Scenario: User can click livechat casengo button
+    Scenario: User can click keterangan persyaratan minimum button
         Given open browser
         When open danabijak site
-        Then user can click livechat casengo button                            
+        Then user can click keterangan persyaratan minimum button                        

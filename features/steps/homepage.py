@@ -14,11 +14,11 @@ def open_browser(context):
     options = Options()
     options.add_argument('start-maximized')
     options.add_argument('disable-infobars')
-    context.driver=webdriver.Chrome(chrome_options=options)
+    context.driver=webdriver.Chrome(chrome_options=options)    
 
 @when('open danabijak site')
 def homepage_show_up(context):
-    context.driver.get('https://danabijak.com')
+    context.driver.get('https://danabijak:sandboxdanabijak!123@sandbox.danabijak.com')
 
 @then('close browser')
 def close_browser(context):
@@ -37,7 +37,7 @@ def click_login_button(context):
 @then('user can click register button')
 def click_register_button(context):
     time.sleep(3)
-    context.driver.find_element(By.XPATH, '//*[@id="nav-collapse"]/ul/li[3]/button').click()
+    context.driver.find_element(By.CLASS_NAME, 'btn signup auth').click()
 
 @then('user can click tentangkami page')
 def click_tentangkami_button(context):
@@ -123,10 +123,6 @@ def click_kebijakan_button(context):
 @then('user can click cekbiaya button')
 def click_cekbiaya_button(context):
     context.driver.find_element(By.XPATH, '//*[@id="main-calculator"]/div[1]/div/button').click()
-   
-@then('user can click keterangan persyaratan minimum button')
-def click_keterangan_persyaratan_button(context):
-    context.driver.find_element(By.CSS_SELECTOR, "#main-calculator > div.wrapperBtnCalculate > button").click()
 
 @then('user can click ajukanpinjaman page')
 def click_ajukanpinjaman_button(context):
@@ -200,11 +196,16 @@ def click_instagram_button(context):
     at.click(on_element=tk).perform();
     time.sleep(5)    
 
-@then('user can click livechat casengo button')
-def click_livechat_button(context):
-    context.driver.execute_script("window.scrollTo(0, 3000)")
+#@then('user can click livechat casengo button')
+#def click_cekbiaya_button(context):
+ #   time.sleep(3)
+  #  context.driver.find_element(By.XPATH, '//*[@id="casengo-inline-chat-status-button-text"]').click() 
+
+@then('user can click keterangan persyaratan minimum button')
+def click_keterangan_persyaratan_button(context):
+    context.driver.execute_script("window.scrollTo(0, 200)")
     time.sleep(3)
-    tk = context.driver.find_element(By.XPATH, '//*[@id="casengo-inline-chat-status-button-text"]')
+    tk = context.driver.find_element(By.XPATH, '//*[@id="main-calculator"]/div[2]/button')
     at = ActionChains(context.driver)
     at.click(on_element=tk).perform();
-    time.sleep(5)              
+    time.sleep(3)      
