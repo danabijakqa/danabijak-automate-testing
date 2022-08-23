@@ -12,30 +12,26 @@ def homepage_register_up(context):
 
 @then('user can access register page')
 def click_register_button(context):
-    context.driver.execute_script("window.scrollTo(0, 2000)")
-    time.sleep(3)
-    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[2]/div/section[1]/div/div/div[2]/button')
-    at = ActionChains(context.driver)
-    at.click(on_element=tk).perform();
-    time.sleep(3)    
+    context.driver.find_element(By.XPATH, '//*[@id="nav-collapse"]/ul/li[3]/button').click()
+    time.sleep(3)   
 
 @then('user input ktp')
 def user_input_email(context):
     context.driver.execute_script("window.scrollTo(0, 200)")
     element = context.driver.find_element(By.NAME, 'personal_code_input')
-    element.send_keys("3275062309932357") 
+    element.send_keys("3275062309932358") 
        
 
 @then('user input phone number')
 def user_input_telepon(context):
     element = context.driver.find_element(By.NAME, 'mobile_number')
-    element.send_keys("85177990124")
+    element.send_keys("85177990128")
           
 
 @then('user input email register')
 def user_input_email(context):
     element = context.driver.find_element(By.NAME, 'email')
-    element.send_keys("ibnutest82@danabijak.com")
+    element.send_keys("ibnutest83@danabijak.com")
      
 
 @then('user input password register')

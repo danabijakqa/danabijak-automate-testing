@@ -12,7 +12,7 @@ Feature: Homepage presence
         Then user can click login button
         And close browser
 
-    Scenario: User can access register page
+    Scenario: User can click register button
         Given open browser
         When open danabijak site
         Then user can click register button
@@ -116,4 +116,6 @@ Feature: Homepage presence
     Scenario: User can click keterangan persyaratan minimum button
         Given open browser
         When open danabijak site
-        Then user can click keterangan persyaratan minimum button                        
+        Then user can click keterangan persyaratan minimum button    
+
+                            

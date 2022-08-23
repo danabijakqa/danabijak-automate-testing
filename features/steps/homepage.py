@@ -36,8 +36,8 @@ def click_login_button(context):
 
 @then('user can click register button')
 def click_register_button(context):
+    context.driver.find_element(By.XPATH, '//*[@id="nav-collapse"]/ul/li[3]/button').click()
     time.sleep(3)
-    context.driver.find_element(By.CLASS_NAME, 'btn signup auth').click()
 
 @then('user can click tentangkami page')
 def click_tentangkami_button(context):
