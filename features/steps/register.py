@@ -16,7 +16,7 @@ def click_register_button(context):
     time.sleep(3)   
 
 @then('user input ktp')
-def user_input_email(context):
+def user_input_ktp(context):
     context.driver.execute_script("window.scrollTo(0, 200)")
     element = context.driver.find_element(By.NAME, 'personal_code_input')
     element.send_keys("3275062309932358") 
