@@ -12,30 +12,25 @@ def homepage_register_up(context):
 
 @then('user can access register page')
 def click_register_button(context):
-    context.driver.execute_script("window.scrollTo(0, 2000)")
-    time.sleep(3)
-    tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[2]/div/section[1]/div/div/div[2]/button')
-    at = ActionChains(context.driver)
-    at.click(on_element=tk).perform();
-    time.sleep(3)    
+    context.driver.find_element(By.CLASS_NAME, "signup").click()
+    time.sleep(3)  
 
 @then('user input ktp')
 def user_input_email(context):
     context.driver.execute_script("window.scrollTo(0, 200)")
     element = context.driver.find_element(By.NAME, 'personal_code_input')
-    element.send_keys("3275062309932357") 
+    element.send_keys("3275062308932359") 
        
-
 @then('user input phone number')
 def user_input_telepon(context):
     element = context.driver.find_element(By.NAME, 'mobile_number')
-    element.send_keys("85177990124")
+    element.send_keys("85177990125")
           
 
 @then('user input email register')
 def user_input_email(context):
     element = context.driver.find_element(By.NAME, 'email')
-    element.send_keys("ibnutest82@danabijak.com")
+    element.send_keys("ibnutest84@danabijak.com")
      
 
 @then('user input password register')
@@ -52,7 +47,7 @@ def user_input__konfirmasi_password(context):
 
 @then('user click checkbox syarat dan ketentuan') 
 def user_click_checkbox(context):
-    context.driver.execute_script("window.scrollTo(0, 200)")
+    context.driver.execute_script("window.scrollTo(0, 300)")
     time.sleep(2)
     tk = context.driver.find_element(By.CLASS_NAME, "form-check-input")
     at = ActionChains(context.driver)
@@ -61,9 +56,9 @@ def user_click_checkbox(context):
 
 @then('user click create account') 
 def user_click_register_account(context):
-    context.driver.execute_script("window.scrollTo(0, 300)")
+    context.driver.execute_script("window.scrollTo(0, 350)")
     context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[2]/div[2]/div/div/form/div[2]/div/button').click()
-    time.sleep(5)  
+    time.sleep(7)  
 
     
     
