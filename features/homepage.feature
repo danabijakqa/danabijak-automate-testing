@@ -16,7 +16,7 @@ Feature: Homepage presence
         Given open browser
         When open danabijak site
         Then user can click register button
-        And close browser
+        And close browser   
 
     Scenario: User can click tentangkami page
         Given open browser
@@ -61,18 +61,18 @@ Feature: Homepage presence
     Scenario: User can click kebijakanprivasi page
         Given open browser
         When open danabijak site
-        Then user can click kebijakanprivasi page                    
-
-    Scenario: User can click kebijakanprivasi page
-        Given open browser
-        When open danabijak site
-        Then user can click kebijakanprivasi page    
+        Then user can click kebijakanprivasi page                     
 
     Scenario: User can click cekbiaya button
         Given open browser
         When open danabijak site
         Then user can click cekbiaya button  
     
+    Scenario: User can click ajukanpinjaman page
+        Given open browser
+        When open danabijak site
+        Then user can click ajukanpinjaman page
+
     Scenario: User can click playstore page
         Given open browser
         When open danabijak site
@@ -86,8 +86,8 @@ Feature: Homepage presence
     Scenario: User can click email button
         Given open browser
         When open danabijak site
-        Then user can click email button   
- 
+        Then user can click email button  
+
     Scenario: User can click facebook button logo
         Given open browser
         When open danabijak site
@@ -107,13 +107,12 @@ Feature: Homepage presence
         Given open browser
         When open danabijak site
         Then user can click instagram button logo
-        
-    Scenario: User can click ajukanpinjaman page
-        Given open browser
-        When open danabijak site
-        Then user can click ajukanpinjaman page
-
+    
     Scenario: User can click keterangan persyaratan minimum button
         Given open browser
         When open danabijak site
-        Then user can click keterangan persyaratan minimum button                        
+        Then user can click keterangan persyaratan minimum button 
+
+     
+ 
+                           

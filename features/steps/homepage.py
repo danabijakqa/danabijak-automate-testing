@@ -32,12 +32,13 @@ def see_tkb_info(context):
 
 @then('user can click login button')
 def click_login_button(context):
-    context.driver.find_element(By.XPATH, '//*[@id="main-calculator"]/div[1]/div/p[2]/a/u').click()
+    context.driver.find_element(By.CLASS_NAME, "login").click()
+    time.sleep(3)
 
 @then('user can click register button')
 def click_register_button(context):
+    context.driver.find_element(By.CLASS_NAME, "signup").click()
     time.sleep(3)
-    context.driver.find_element(By.CLASS_NAME, 'btn signup auth').click()
 
 @then('user can click tentangkami page')
 def click_tentangkami_button(context):
@@ -153,7 +154,7 @@ def click_wanumber_button(context):
 
 @then('user can click email button')
 def click_email_button(context):
-    context.driver.execute_script("window.scrollTo(0, 3000)")
+    context.driver.execute_script("window.scrollTo(0, 3200)")
     time.sleep(3)
     tk = context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[4]/div/footer/div/div[2]/div[2]/ul/li[5]/a')
     at = ActionChains(context.driver)
