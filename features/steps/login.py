@@ -17,11 +17,12 @@ def user_input_email(context):
 @then('user input password')
 def user_input_password(context):
     element = context.driver.find_element(By.NAME, 'password') 
-    element.send_keys("123123")
+    element.send_keys("123123")   
     
 @then('user click login') 
 def user_click_login(context):
     context.driver.find_element(By.XPATH, "//button[@type='commit']").click()
     WebDriverWait(context.driver, 10).until(EC.presence_of_element_located((By.XPATH, "//span[normalize-space()='Selamat datang, ibnu test tiga puluh!']")))
+    context.driver.save_screenshot("D:\Selenium\danabijak-automate-testing\Evidence\login.png")
     
 
