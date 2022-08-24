@@ -59,6 +59,7 @@ def user_click_register_account(context):
     context.driver.execute_script("window.scrollTo(0, 350)")
     context.driver.find_element(By.XPATH, '//*[@id="__layout"]/div/div[2]/div[2]/div/div/form/div[2]/div/button').click()
     time.sleep(7)  
+    context.driver.save_screenshot("D:\Selenium\danabijak-automate-testing\Evidence\register.png")    
 
     
     
